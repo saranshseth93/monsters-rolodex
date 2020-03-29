@@ -16,7 +16,7 @@ class App extends Component{
   }
 
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch('https://monsters.free.beeceptor.com/monsters')
     .then(response => response.json())
     .then(users => this.setState({ monsters:users }));
   }
